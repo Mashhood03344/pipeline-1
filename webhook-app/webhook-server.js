@@ -11,7 +11,7 @@ app.post('/github', (req, res) => {
   // Check if the push event is for the main branch
   if (ref && ref === 'refs/heads/main') {
     // Call your deploy script here
-    exec('sh "/home/mash-hood/DRIVE D/DEVOPS LEARNING/Programmer Force Tasks/Task 1/deploy1.sh"', (error, stdout, stderr) => {
+    exec('sh "add you directory path here path/deploy1.sh"', (error, stdout, stderr) => {
       if (error) {
         console.error(`exec error: ${error}`);
         res.status(500).send('Error during deployment');
