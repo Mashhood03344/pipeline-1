@@ -1,2 +1,1 @@
-# pipeline-1
-push the code on the github repository make the webhook, clone the repo on the local machine when a push is made, then dockerize the app and run it on port 3000
+This is the server that will listen for the post request from the github webhook and will run the deploy.sh file
